@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="title" property="og:title" content="TropChaud | About Me"/>
+    <meta name="type" property="og:type" content="website"/>
+    <meta name="image" property="og:image" content="https://avatars.githubusercontent.com/u/99858125?v=4"/>
+    <meta name="url" property="og:url" content="https://tropChaud.github.io/about"/>
+    <meta name="description" property="og:description" content="TropChaud's Portfolio Site | A leader in security research & data analysis"/>
+    <meta name="author" content="TropChaud">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Social Media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>TropChaud | Data-Driven Security Intelligence Insights | About Me</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/99858125?v=4">
+
+    <style>
+      /**
+        * Configuration variables
+      */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 10px;
+        / background-color: #111;
+        / color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+      }
+      @media (min-width: 768px) {
+        body {
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+      .img {
+        border-radius: 100%;
+        / color: #fafafa;
+        display: flex;
+        flex: 0 0 125px;
+        height: 125px;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        width: 125px;
+      }
+      .img img {
+        height: 100%;
+      }
+      .img__overlay {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: opacity 0.25s;
+        z-index: 1;
+      }
+      .img__overlay:hover {
+        opacity: 1;
+      }
+      .img__overlay_selected {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: opacity 0.25s;
+        z-index: 1;
+        opacity: 1;
+        background: rgba(0,0,0,0.4);
+        color: #fafafa;
+        font-size: 22px;
+      }
+      /**
+        * Theming
+      */
+      span {
+        bottom: 0;
+        font-size: 24px;
+        left: 0;
+        line-height: 200px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .img {
+        -webkit-animation: fadeIn 0.5s;
+                animation: fadeIn 0.5s;
+        border: 3px solid #c0c0c0;
+        margin: 20px;
+      }
+      .img__overlay {
+        background: rgba(0,0,0,0.4);
+        color: #fafafa;
+        font-size: 22px;
+      }
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+       /* Style all font awesome icons */
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        color: #c0c0c0;
+      }
+      /* Add a hover effect if you want */
+      .fa:hover {
+        opacity: 0.7;
+      }
+       /* Style Mastodon icon */
+      .social-icon {
+        padding: 5px 0px 15px 15px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        text-decoration: none;
+        fill: #c0c0c0;
+      }
+      /* Add a hover effect if you want */
+      .social-icon:hover {
+        opacity: 0.7;
+      }
+
+     /* Style for circle images */
+      .image-cropped {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <a href="index.html" style="text-decoration:none" class="text-body">
+            <h2 style="text-align:center;padding:10px 0px 0px 0px">TropChaud's Portfolio Site | A leader in security research & data analysis</h2>
+          </a>
+        </div>
+      </div>
+      <div class="row" style="justify-content:center">
+        <a class="img" href="projects.html" style="text-align:center">
+          <div class="img__overlay">Projects</div><img src="assets/images/mo_chart_full.png"/>
+        </a>
+        <a class="img" href="talks.html">
+          <div class="img__overlay">Talks</div><img src="assets/images/dc.jpg"/>
+        </a>
+        <a class="img" href="visualizations-publications.html">
+          <div class="img__overlay" style="font-size:15px">Visualizations & Publications</div><img src="assets/images/ransomware_pies.jpg"/>
+        </a>
+        <a class="img" href="about.html">
+          <div class="img__overlay_selected">About Me</div><img src="https://avatars.githubusercontent.com/u/99858125?v=4"/>
+        </a>
+      </div>
+      <div class="row" style="padding:50px 0px 0px 0px">
+        <div class="col-sm" style="margin-left:20%;margin-right:20%">
+          <div class="img" style="float:left;margin:5px;width:200px;height:200px">
+            <img src="https://media.licdn.com/dms/image/C4D03AQHThiH6WMUVQg/profile-displayphoto-shrink_400_400/0/1629655953543?e=1709769600&v=beta&t=L6DGcj39oYwwXa3cQKd_C-an7mXxv6qCKEGTNfc7XTw"/>
+          </div>
+          <h2 style="text-align:left;padding:10px 0px 0px 0px">About Me</h2>
+          <p style="text-align:left;padding:10px 0px 0px 0px">Scott Small is a security & intelligence practitioner and expert in cyber threat intelligence & threat profiling, open source research & investigations, and data analysis & automation. He currently serves as Director of Cyber Threat Intelligence at <a href="https://www.tidalcyber.com/" target="_blank">Tidal Cyber</a>. Scott has advised enterprise and public sector security teams across maturity levels on technical and strategic applications of intelligence and on using technology to help identify and mitigate organizational risk. Throughout his career, Scott has briefed and trained large and small audiences and has <a href="talks.html" target="_blank">presented original content</a> at most major security conferences, including DEFCON, FIRSTCON, RSA Conference, MITRE ATT&CKcon, multiple BSides, and ISAC & other industry events.</p>
+          <p style="text-align:left">Scott is an active member of the professional security and intelligence communities and a proponent of open-source information for upskilling and strengthening our collective security. In addition to contributing to community projects, he has published <a href="projects.html" target="_blank">independent projects</a> that aggregate and streamline publicly accessible security resources, as well as his own original tools & resources.</p>
+          <p style="text-align:left">I'm active on several social media channels, especially LinkedIn. If you’d like to see even more content - as it’s published - connect with me on the platforms below!</p>
+          <div class="row">
+            <div class="col-sm">
+              <ul style="margin-left:35%;margin-right:35%">
+                <li><a href="https://www.linkedin.com/in/scott-small-20ba0164/" target="_blank">LinkedIn</a></li>
+                <li><a href="https://github.com/tropChaud/" target="_blank">GitHub</a></li>
+                <li><a href="https://www.youtube.com/@tropchaud6452" target="_blank">YouTube</a></li>
+              </ul>
+            </div>
+            <div class="col-sm">
+              <ul style="margin-left:35%;margin-right:35%">
+                <li><a href="https://infosec.exchange/@IntelScott" target="_blank">Mastodon</a></li>
+                <li><a href="https://twitter.com/IntelScott" target="_blank">Twitter</a></li>
+                <li><a href="https://www.reddit.com/user/Trop_Chaud" target="_blank">Reddit</a></li>
+              </ul>
+            </div>
+          </div>
+          <h3 style="text-align:left">Key Skills & Expertise</h3>
+          <p style="text-align:left">Intelligence collection, analysis, automation, & operationalization, Open-Source intelligence (OSINT) research & investigations, Risk assessment, Threat/Risk quantification, Data analysis & visualization, Cyber & physical security best practices, Operational security, Insider threat, Security SaaS</p>
+          <h3 style="text-align:left">Programming Languages</h3>
+          <p style="text-align:left">Python (Advanced), Javascript (Intermediate), HTML (Intermediate), Data visualization (D3 & SaaS), Spreadsheet data analysis</p>
+          <h3 style="text-align:left">Foreign Languages</h3>
+          <p style="text-align:left">French (Advanced), Arabic (Intermediate)</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <!-- Add font awesome icons -->
+          <a href="https://github.com/tropChaud/" target="_blank" class="fa fa-github"></a>
+          <a href="https://www.linkedin.com/in/scott-small-20ba0164/" target="_blank" class="fa fa-linkedin"></a>
+          <a href="https://infosec.exchange/@IntelScott" target="_blank" style="text-decoration:none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54a102.5 102.5 0 0 1 -.9-13.9c85.6 20.9 158.7 9.1 178.8 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.3V197c0-58.5-64-56.6-64-6.9v114.2H90.2c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175z"/></svg>
+          </a>
+          <a href="https://twitter.com/IntelScott" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/@tropchaud6452" target="_blank" class="fa fa-youtube"></a>
+          <a href="https://www.reddit.com/user/Trop_Chaud" target="_blank" class="fa fa-reddit"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

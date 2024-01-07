@@ -1,0 +1,384 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="title" property="og:title" content="TropChaud | Visualizations & Publications"/>
+    <meta name="type" property="og:type" content="website"/>
+    <meta name="image" property="og:image" content="https://raw.githubusercontent.com/tropChaud/tropChaud.github.io/main/assets/images/ransomware_pies.jpg"/>
+    <meta name="url" property="og:url" content="https://tropChaud.github.io/talks"/>
+    <meta name="description" property="og:description" content="TropChaud's Portfolio Site | A leader in security research & data analysis"/>
+    <meta name="author" content="TropChaud">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Social Media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>TropChaud | Data-Driven Security Intelligence Insights</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/99858125?v=4">
+
+    <style>
+      /**
+        * Configuration variables
+      */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 10px;
+        / background-color: #111;
+        / color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+      }
+      @media (min-width: 768px) {
+        body {
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+      .img {
+        border-radius: 100%;
+        / color: #fafafa;
+        display: flex;
+        flex: 0 0 125px;
+        height: 125px;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        width: 125px;
+      }
+      .img img {
+        height: 100%;
+      }
+      .img__overlay {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: opacity 0.25s;
+        z-index: 1;
+      }
+      .img__overlay:hover {
+        opacity: 1;
+      }
+      .img__overlay_selected {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: opacity 0.25s;
+        z-index: 1;
+        opacity: 1;
+        background: rgba(0,0,0,0.4);
+        color: #fafafa;
+        font-size: 22px;
+      }
+      /**
+        * Theming
+      */
+      span {
+        bottom: 0;
+        font-size: 24px;
+        left: 0;
+        line-height: 200px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .img {
+        -webkit-animation: fadeIn 0.5s;
+                animation: fadeIn 0.5s;
+        border: 3px solid #c0c0c0;
+        margin: 20px;
+      }
+      .img__overlay {
+        background: rgba(0,0,0,0.4);
+        color: #fafafa;
+        font-size: 22px;
+      }
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+       /* Style all font awesome icons */
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        color: #c0c0c0;
+      }
+      /* Add a hover effect if you want */
+      .fa:hover {
+        opacity: 0.7;
+      }
+       /* Style Mastodon icon */
+      .social-icon {
+        padding: 5px 0px 15px 15px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        text-decoration: none;
+        fill: #c0c0c0;
+      }
+      /* Add a hover effect if you want */
+      .social-icon:hover {
+        opacity: 0.7;
+      }
+
+     /* Style for boxes */
+    .content {
+      position: relative;
+      width: 90%;
+      margin: auto;
+    }
+    .content-image{
+      width: 100%;
+      border-radius: 15px;
+      margin: 20px;
+    }
+    .content-image:hover{
+      width: 100%;
+      border-radius: 15px;
+      margin: 20px;
+      border: 2.25px solid #c0c0c0;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <a href="index.html" style="text-decoration:none" class="text-body">
+            <h2 style="text-align:center;padding:10px 0px 0px 0px">TropChaud's Portfolio Site | A leader in security research & data analysis</h2>
+          </a>
+        </div>
+      </div>
+      <div class="row" style="justify-content:center">
+        <a class="img" href="projects.html" style="text-align:center">
+          <div class="img__overlay">Projects</div><img src="assets/images/mo_chart_full.png"/>
+        </a>
+        <a class="img" href="talks.html">
+          <div class="img__overlay">Talks</div><img src="assets/images/dc.jpg"/>
+        </a>
+        <a class="img" href="visualizations-publications.html">
+          <div class="img__overlay_selected" style="font-size:15px">Visualizations & Publications</div><img src="assets/images/ransomware_pies.jpg"/>
+        </a>
+        <a class="img" href="about.html">
+          <div class="img__overlay">About Me</div><img src="https://avatars.githubusercontent.com/u/99858125?v=4"/>
+        </a>
+      </div>
+      <div class="row" style="margin-left:20%;margin-right:20%">
+          <div class="col-sm">
+            <a href="#visualizations">
+              <p>#Visualizations</p>
+            </a>
+          </div>
+          <div class="col-sm">
+            <a href="#publications">
+              <p>#Publications</p>
+            </a>
+          </div>
+          <div class="col-sm">
+            <a href="#citations-appearances">
+              <p>#Citations</p>
+            </a>
+          </div>
+        </div>
+      <div class="row" style="padding:0px 0px 20px 0px">
+        <div class="col-sm">
+          <h2 style="text-align:left;padding:10px 0px 0px 0px" id="visualizations">Visualizations</h2>
+          <p style="text-align:left;padding:10px 0px 0px 0px">Below are some of my favorite visualizations I've had a chance to share. Most images link to a supporting source that provides further context.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="content">
+            <a href="https://metaosint.github.io/" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0;width:80%;margin:5px 20px 20px 20px" src="assets/images/mo_chart_full.png" target="_blank">
+            </a>
+            <p>An <a href="https://metaosint.github.io/" target="_blank">interactive visualization</a> of 8k OSINT tools & resources, scaled according to relative citation popularity</p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="content">
+            <a href="https://www.linkedin.com/posts/scott-small-20ba0164_intelligence-cti-activity-7115281902965514240-wYQp/" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0;width:80%;margin:5px 20px 20px 20px" src="assets/images/report_review_time.jpg">
+            </a>
+            <p>Many CTI reports contain increasing amounts of detail, but this often adds time & effort to the review & processing phases</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="content">
+            <a href="https://www.linkedin.com/posts/scott-small-20ba0164_ttp-cti-unc3944-activity-7109483713763139584-Bili/" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0" src="assets/images/ransomware_pies.jpg">
+            </a>
+            <p>Top ransomware operations often attack indiscriminately, making <a href="https://www.tidalcyber.com/blog/ransomware-threat-profiling-prioritizing-indiscriminate-threats" target="_blank">prioritization a challenge</a></p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="content">
+            <a href="https://github.com/tropChaud/Categorized-Adversary-TTPs" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0;width:90%" src="assets/images/Magic Hound.png">
+            </a>
+            <p>An <a href="https://github.com/tropChaud/Categorized-Adversary-TTPs/tree/main/docs/diamond_models" target="_blank">auto-generated series</a> of <a href="https://www.activeresponse.org/wp-content/uploads/2013/07/diamond.pdf" target="_blank">Diamond Model</a>-esque visuals summarizing key characteristics of major cyber adversary groups & their common targets</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="content">
+            <a href="https://www.linkedin.com/posts/scott-small-20ba0164_ransomware-hive-security-activity-7034850374381379584-GPM-/" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0" src="assets/images/hive.jpg">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="content">
+            <a href="https://kumu.io/TropChaud/aclopalypse#aclopalypse-fixed-layout" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0;width:90%" src="assets/images/aclopalypse.png">
+            </a>
+            <p>An <a href="https://kumu.io/TropChaud/aclopalypse#aclopalypse-fixed-layout" target="_blank">interactive link analysis</a> of the tools & TTPs associated with the Clop ransomware operation</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="content">
+            <a href="https://onodo.org/visualizations/235067" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0" src="assets/images/initial-access-links.png">
+            </a>
+            <p>An <a href="https://onodo.org/visualizations/235067" target="_blank">interactive visualization</a> showing relationships among various malware/tools used for initial network access (see the accompanying talk <a href="talks.html#sleuthcon" target="_blank">here</a>!)</p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="content">
+            <a href="https://www.linkedin.com/posts/scott-small-20ba0164_socgholish-threatintel-malware-activity-7041008833707560960-uDAD" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0;width:90%" src="assets/images/socgholish_links.jpg">
+            </a>
+            <p>SocGholish malware's links to adversary operations & other attacker tools</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="content">
+            <a href="https://www.linkedin.com/pulse/developing-red-team-tests-mitre-attck-intelligence-compass-small/" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0" src="assets/images/attack_redteam_profiling.png">
+            </a>
+            <p>Informing red team testing with risk profiling, MITRE ATT&CK®, and TTP intelligence leads to quicker identification & closing of security gaps</p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="content">
+            <a href="https://www.linkedin.com/pulse/aligning-security-controls-adversary-threats-scott-small/" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0" src="assets/images/control_alignment.gif">
+            </a>
+            <p>Security control alignment with TTPs and the key steps of a control validation process</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="content" style="padding:10% 0% 0% 0%">
+            <a href="https://www.linkedin.com/posts/scott-small-20ba0164_ransomware-mitreattack-bianlian-activity-7090254496097841153-xc5G" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0" src="assets/images/bianlian.jpg">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="content">
+            <a href="talks.html#bridges" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0" src="assets/images/engage.png">
+            </a>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="content" style="padding:8% 0% 0% 0%">
+            <a href="https://www.linkedin.com/posts/scott-small-20ba0164_ransomware-infostealers-qakbot-activity-7058031094549336065-ASHk" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0" src="assets/images/adversary-economics.jpg">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="content">
+            <a href="https://www.prnewswire.com/news-releases/impact-of-supply-chain-attacks-hits-highest-rate-ever-300508615.html" target="_blank">
+              <img class="content-image" style="outline: 2px solid #c0c0c0;width:60%" src="assets/images/supply-chain.jpg">
+            </a>
+            <p>Led development of an original, data-driven <a href="https://www.prnewswire.com/news-releases/impact-of-supply-chain-attacks-hits-highest-rate-ever-300508615.html" target="_blank">study</a> on "supply chain terrorism" and its impact on global trade</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <h2 style="text-align:left;padding:10px 0px 0px 0px" id="publications">Publications</h2>
+          <p style="text-align:left;padding:10px 0px 0px 0px"><a href="https://www.tidalcyber.com/ultimate-guide-to-cyber-threat-profiling" target="_blank">The Ultimate Guide to Cyber Threat Profiling</a>: Authored all of the content in this 60-page guide designed for threat intelligence analysts and other security practitioners</p>
+          <p style="text-align:left;padding:10px 0px 0px 0px"><a href="https://www.tidalcyber.com/blog" target="_blank">Tidal Cyber's blog</a>: Lead contributor to the company's blog, regularly publishing CTI- and data-focused analysis</p>
+          <p style="text-align:left;padding:10px 0px 0px 0px"><a href="https://metaosint.github.io/2023-osint-trends-analysis" target="_blank">2023 OSINT Landscape Trends: A Data-Driven Analysis</a>: An analytical summary after tracking tens of thousands of OSINT-related tools & resources over five years</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <h2 style="text-align:left;padding:10px 0px 0px 0px" id="citations-appearances">Citations & Appearances</h2>
+          <p style="text-align:left;padding:10px 0px 0px 0px">Axios: <a href="https://www.axios.com/2024/01/05/2024-hackers-predicted-tactics-cyberattacks" target="_blank">Hackers expected to double down on trusted tactics in 2024</a></p>
+          <p style="text-align:left;padding:10px 0px 0px 0px">BankInfoSecurity: <a href="https://www.bankinfosecurity.com/sizing-up-worst-healthcare-hacks-2023-a-23972" target="_blank">Sizing Up the Worst Healthcare Hacks of 2023</a>, <a href="https://www.bankinfosecurity.com/hackers-hit-medical-imaging-services-centers-in-ny-texas-a-23793" target="_blank">Hackers Hit Medical Imaging Services Centers in NY, Texas</a></p>
+          <p style="text-align:left;padding:10px 0px 0px 0px"><a href="https://ieeexplore.ieee.org/abstract/document/10099277" target="_blank">Activity-Attack Graphs for Intelligence-Informed Threat COA Development</a>: Data from my <a href="projects.html#categorized-ttps" target="_blank">Categorized Adversary TTPs</a> project was cited & used in a study conducted by researchers at the U.S. Military Academy at West Point</p>
+          <p style="text-align:left;padding:10px 0px 0px 0px">Podcasts:</p>
+          <ul style="text-align:left">
+            <li><a href="https://podcasts.apple.com/us/podcast/scott-small-on-using-dark-web-threat-intelligence-to/id1650672612?i=1000583229571" target="_blank">Future of Cyber Crime Podcast</a> (KELA)</li>
+            <li><a href="https://podcasts.apple.com/us/podcast/off-the-record/id1506397133?i=1000488142130" target="_blank">Off the Record</a> (Recorded Future)</li>
+            <li><a href="https://www.linkedin.com/company/blue-team-warrior-podcast" target="_blank">Blue Team Warrior Podcast</a> (Semper Sec)</li>
+          </ul>
+          <p style="text-align:left;padding:10px 0px 0px 0px">Invited to present & train at numerous conferences & events (see more on the <a href="talks.html" target="_blank">Talks</a> page)</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <!-- Add font awesome icons -->
+          <a href="https://github.com/tropChaud/" target="_blank" class="fa fa-github"></a>
+          <a href="https://www.linkedin.com/in/scott-small-20ba0164/" target="_blank" class="fa fa-linkedin"></a>
+          <a href="https://infosec.exchange/@IntelScott" target="_blank" style="text-decoration:none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54a102.5 102.5 0 0 1 -.9-13.9c85.6 20.9 158.7 9.1 178.8 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.3V197c0-58.5-64-56.6-64-6.9v114.2H90.2c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175z"/></svg>
+          </a>
+          <a href="https://twitter.com/IntelScott" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/@tropchaud6452" target="_blank" class="fa fa-youtube"></a>
+          <a href="https://www.reddit.com/user/Trop_Chaud" target="_blank" class="fa fa-reddit"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

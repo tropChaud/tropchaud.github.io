@@ -1,2 +1,2 @@
-# tropchaud.github.io
-TropChaud's Portfolio Site | A leader in security research &amp; data analysis
+# TropChaud |  A leader in security research &amp; data analysis
+Check out my [portfolio site](https://tropchaud.github.io/), featuring links to my other projects, talks, top visualizations & publications, and more 

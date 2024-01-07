@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="title" property="og:title" content="TropChaud's Projects"/>
+    <meta name="type" property="og:type" content="website"/>
+    <meta name="image" property="og:image" content="https://raw.githubusercontent.com/MetaOSINT/MetaOSINT.github.io/main/assets/images/mo_chart_full.png"/>
+    <meta name="url" property="og:url" content="https://tropChaud.github.io/projects"/>
+    <meta name="description" property="og:description" content="TropChaud's Portfolio Site | A leader in security research & data analysis"/>
+    <meta name="author" content="TropChaud">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Social Media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>TropChaud | Data-Driven Security Intelligence Insights | Projects</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/99858125?v=4">
+
+    <style>
+      /**
+        * Configuration variables
+      */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        padding: 10px;
+        / background-color: #111;
+        / color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+      }
+      @media (min-width: 768px) {
+        body {
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+      .img {
+        border-radius: 100%;
+        / color: #fafafa;
+        display: flex;
+        flex: 0 0 125px;
+        height: 125px;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        width: 125px;
+      }
+      .img img {
+        height: 100%;
+      }
+      .img__overlay {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: opacity 0.25s;
+        z-index: 1;
+      }
+      .img__overlay:hover {
+        opacity: 1;
+      }
+      .img__overlay_selected {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: opacity 0.25s;
+        z-index: 1;
+        opacity: 1;
+        background: rgba(0,0,0,0.4);
+        color: #fafafa;
+        font-size: 22px;
+      }
+      /**
+        * Theming
+      */
+      span {
+        bottom: 0;
+        font-size: 24px;
+        left: 0;
+        line-height: 200px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .img {
+        -webkit-animation: fadeIn 0.5s;
+                animation: fadeIn 0.5s;
+        border: 3px solid #c0c0c0;
+        margin: 20px;
+      }
+      .img:hover {
+        border: 4.5px solid #c0c0c0;
+      }
+      .img__overlay {
+        background: rgba(0,0,0,0.4);
+        color: #fafafa;
+        font-size: 22px;
+      }
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+       /* Style all font awesome icons */
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        color: #c0c0c0;
+      }
+      /* Add a hover effect if you want */
+      .fa:hover {
+        opacity: 0.7;
+      }
+       /* Style Mastodon icon */
+      .social-icon {
+        padding: 5px 0px 15px 15px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        text-decoration: none;
+        fill: #c0c0c0;
+      }
+      /* Add a hover effect if you want */
+      .social-icon:hover {
+        opacity: 0.7;
+      }
+
+     /* Style for boxes */
+    .content {
+      position: relative;
+      width: 100%;
+      margin: auto;
+    }
+    .content-image{
+      width: 100%;
+      border-radius: 20px
+    }
+
+     /* Style for circle images */
+      .image-cropped {
+        width: 200px;
+        height: 200px;
+        position: relative;
+        overflow: hidden;
+        border-radius: 50%;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <a href="index.html" style="text-decoration:none" class="text-body">
+            <h2 style="text-align:center;padding:10px 0px 0px 0px">TropChaud's Portfolio Site | A leader in security research & data analysis</h2>
+          </a>
+        </div>
+      </div>
+      <div class="row" style="justify-content:center">
+        <a class="img" href="projects.html" style="text-align:center">
+          <div class="img__overlay_selected">Projects</div><img src="assets/images/mo_chart_full.png"/>
+        </a>
+        <a class="img" href="talks.html">
+          <div class="img__overlay">Talks</div><img src="assets/images/dc.jpg"/>
+        </a>
+        <a class="img" href="visualizations-publications.html">
+          <div class="img__overlay" style="font-size:15px">Visualizations & Publications</div><img src="assets/images/ransomware_pies.jpg"/>
+        </a>
+        <a class="img" href="about.html">
+          <div class="img__overlay">About Me</div><img src="https://avatars.githubusercontent.com/u/99858125?v=4"/>
+        </a>
+      </div>
+      <div class="row" style="padding:0px 0px 20px 0px">
+        <div class="col-sm">
+          <p style="padding:10px 0px 0px 0px">In addition to contributing to community projects, I've developed & published multiple original projects, including two web applications, tools for intelligence analysts/researchers, & other resources. A common theme involves working with & visualizing large datasets, in order to achieve faster & better security outcomes. Click below to explore any project further.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="content">
+            <div class="img" style="width:250px;height:250px;margin-left:auto;margin-right:auto">
+              <a href="https://metaosint.github.io/" target="_blank">
+                <img src="assets/images/mo_chart_full.png">
+              </a>
+            </div>
+            <a href="https://metaosint.github.io/" target="_blank" style="text-decoration:none" class="text-body"><h4>MetaOSINT</h4></a>
+            <p>Aggregates 12k+ OSINT tools & resources and streamlines surfacing "top" resources per category</p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="content">
+            <div class="img" style="width:250px;height:250px;margin-left:auto;margin-right:auto">
+              <a href="https://controlcompass.github.io/" target="_blank">
+                <img src="assets/images/cvc.png">
+              </a>
+            </div>
+            <a href="https://controlcompass.github.io/" target="_blank" style="text-decoration:none" class="text-body"><h4>Control Validation Compass</h4></a>
+            <p>Threat modeling aide & purple team content repository containing 12k+ technical & policy controls and tests aligned with 600 attacker techniques</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="content" id="categorized-ttps">
+            <div class="img" style="width:250px;height:250px;margin-left:auto;margin-right:auto">
+              <a href="https://github.com/tropChaud/Categorized-Adversary-TTPs" target="_blank">
+                <img src="assets/images/APT30.png">
+              </a>
+            </div>
+            <a href="https://github.com/tropChaud/Categorized-Adversary-TTPs" target="_blank" style="text-decoration:none" class="text-body"><h4>Categorized Adversary TTPs</h4></a>
+            <p>Merge of two major cyber adversary datasets, enabling victim-adversary-technique pivoting for both tactical and strategic analysis</p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="content">
+            <div class="img" style="width:250px;height:250px;margin-left:auto;margin-right:auto">
+              <a href="https://app.tidalcyber.com/" target="_blank">
+                <img src="https://www.tidalcyber.com/hs-fs/hubfs/Threat_Profiling_for_Ransomware_Activity-Matrix.png?width=2000&height=986&name=Threat_Profiling_for_Ransomware_Activity-Matrix.png">
+              </a>
+            </div>
+            <a href="https://app.tidalcyber.com/" target="_blank" style="text-decoration:none" class="text-body"><h4>Tidal Cyber Community Edition Platform</h4></a>
+            <p>I lead the production & delivery of threat intelligence content into Tidal’s platforms, including the <a href="https://app.tidalcyber.com/" target="_blank">free Community Edition</a>. This content is formatted just like that found in MITRE ATT&CK®, increasing its utility for defenders</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <div class="content">
+            <div class="img" style="width:250px;height:250px;margin-left:auto;margin-right:auto">
+              <a href="https://github.com/tropChaud" target="_blank">
+                <img src="assets/images/github_profile.png">
+              </a>
+            </div>
+            <a href="https://github.com/tropChaud" target="_blank" style="text-decoration:none" class="text-body"><h4>Other Projects</h4></a>
+            <p>My GitHub profile hosts several other threat intelligence- & OSINT-focused tools & projects</p>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="content" style="padding:8% 0% 0% 0%">
+            <a href="https://github.com/tropChaud" target="_blank" style="text-decoration:none" class="text-body"><h4>Contributions</h4></a>
+            <p style="padding:10px 0px 0px 0px">In addition to my own projects, I contribute to community security projects, including:</p>
+            <ul style="text-align:left">
+              <li><a href="https://github.com/redcanaryco/atomic-red-team" target="_blank">Atomic Red Team™</a>: A library of security tests that recreate adversaries' behaviors</li>
+              <li><a href="https://github.com/SigmaHQ/sigma" target="_blank">Sigma</a>: Generic and open signature format for threat detections</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <!-- Add font awesome icons -->
+          <a href="https://github.com/tropChaud/" target="_blank" class="fa fa-github"></a>
+          <a href="https://www.linkedin.com/in/scott-small-20ba0164/" target="_blank" class="fa fa-linkedin"></a>
+          <a href="https://infosec.exchange/@IntelScott" target="_blank" style="text-decoration:none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54a102.5 102.5 0 0 1 -.9-13.9c85.6 20.9 158.7 9.1 178.8 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.3V197c0-58.5-64-56.6-64-6.9v114.2H90.2c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175z"/></svg>
+          </a>
+          <a href="https://twitter.com/IntelScott" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/@tropchaud6452" target="_blank" class="fa fa-youtube"></a>
+          <a href="https://www.reddit.com/user/Trop_Chaud" target="_blank" class="fa fa-reddit"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

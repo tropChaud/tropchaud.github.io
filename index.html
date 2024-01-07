@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta name="title" property="og:title" content="TropChaud's Portfolio Site | A leader in security research & data analysis"/>
+    <meta name="type" property="og:type" content="website"/>
+    <meta name="image" property="og:image" content="https://raw.githubusercontent.com/tropChaud/tropChaud.github.io/main/assets/images/homepage.png"/>
+    <meta name="url" property="og:url" content="https://tropChaud.github.io/"/>
+    <meta name="description" property="og:description" content="TropChaud's Portfolio Site | A leader in security research & data analysis"/>
+    <meta name="author" content="TropChaud">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Social Media icons -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+
+    <title>TropChaud | Data-Driven Security Intelligence Insights | Home</title>
+    <link rel="icon" type="image/x-icon" href="https://avatars.githubusercontent.com/u/99858125?v=4">
+
+    <style>
+      /**
+        * Configuration variables
+      */
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        align-items: center;
+        / background-color: #111;
+        / color: #fafafa;
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        text-align: center;
+      }
+      @media (min-width: 768px) {
+        body {
+          flex-direction: row;
+          justify-content: center;
+        }
+      }
+      .img {
+        border-radius: 100%;
+        / color: #fafafa;
+        display: flex;
+        flex: 0 0 220px;
+        height: 220px;
+        justify-content: center;
+        overflow: hidden;
+        position: relative;
+        width: 220px;
+      }
+      .img img {
+        height: 100%;
+      }
+      .img__overlay {
+        align-items: center;
+        bottom: 0;
+        display: flex;
+        justify-content: center;
+        left: 0;
+        opacity: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: opacity 0.25s;
+        z-index: 1;
+      }
+      .img__overlay:hover {
+        opacity: 1;
+      }
+      /**
+        * Theming
+      */
+      span {
+        bottom: 0;
+        font-size: 24px;
+        left: 0;
+        line-height: 200px;
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      .img {
+        -webkit-animation: fadeIn 0.5s;
+                animation: fadeIn 0.5s;
+        border: 3px solid #c0c0c0;
+        margin: 20px;
+      }
+      .img__overlay {
+        background: rgba(0,0,0,0.4);
+        color: #fafafa;
+        font-size: 30px;
+      }
+      @-webkit-keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+       /* Style all font awesome icons */
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;
+        text-align: center;
+        text-decoration: none;
+        color: #c0c0c0;
+      }
+      /* Add a hover effect if you want */
+      .fa:hover {
+        opacity: 0.7;
+      }
+       /* Style Mastodon icon */
+      .social-icon {
+        padding: 5px 0px 15px 15px;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        text-decoration: none;
+        fill: #c0c0c0;
+      }
+      /* Add a hover effect if you want */
+      .social-icon:hover {
+        opacity: 0.7;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm">
+          <h1 style="text-align:left;padding:0px 0px 8px 0px" class="text-body">TropChaud | A leader in security research & data analysis</h1>
+          <p style="text-align:left">Welcome! I'm TropChaud (<a href="https://www.youtube.com/watch?v=TNFLYz2etFo" target="_blank">tʁo ʃo</a>), a career intelligence researcher & analyst. I love creating tools, resources, and other content, especially when it involves large datasets & visualizations, and sharing it all in ways that make it easier to digest & retain.</p>
+          <p style="text-align:left;padding:0px 0px 8px 0px">This site is a quick landing point for various works I've had the opportunity to share. Click below to explore (or to learn a little more about me).</p>
+        </div>
+      </div>
+      <div class="row" style="justify-content:center">
+        <a class="img" href="projects.html">
+          <div class="img__overlay">Projects</div><img src="assets/images/mo_chart_full.png"/>
+        </a>
+        <a class="img" href="talks.html">
+          <div class="img__overlay">Talks</div><img src="assets/images/dc.jpg"/>
+        </a>
+        <a class="img" href="visualizations-publications.html">
+          <div class="img__overlay" style="font-size:28px">Visualizations & Publications</div><img src="assets/images/ransomware_pies.jpg"/>
+        </a>
+        <a class="img" href="about.html">
+          <div class="img__overlay">About Me</div><img src="https://avatars.githubusercontent.com/u/99858125?v=4"/>
+        </a>
+      </div>
+      <div class="row">
+        <div class="col-sm">
+          <!-- Add font awesome icons -->
+          <a href="https://github.com/tropChaud/" target="_blank" class="fa fa-github"></a>
+          <a href="https://www.linkedin.com/in/scott-small-20ba0164/" target="_blank" class="fa fa-linkedin"></a>
+          <a href="https://infosec.exchange/@IntelScott" target="_blank" style="text-decoration:none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="social-icon" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.--><path d="M433 179.1c0-97.2-63.7-125.7-63.7-125.7-62.5-28.7-228.6-28.4-290.5 0 0 0-63.7 28.5-63.7 125.7 0 115.7-6.6 259.4 105.6 289.1 40.5 10.7 75.3 13 103.3 11.4 50.8-2.8 79.3-18.1 79.3-18.1l-1.7-36.9s-36.3 11.4-77.1 10.1c-40.4-1.4-83-4.4-89.6-54a102.5 102.5 0 0 1 -.9-13.9c85.6 20.9 158.7 9.1 178.8 6.7 56.1-6.7 105-41.3 111.2-72.9 9.8-49.8 9-121.5 9-121.5zm-75.1 125.2h-46.6v-114.2c0-49.7-64-51.6-64 6.9v62.5h-46.3V197c0-58.5-64-56.6-64-6.9v114.2H90.2c0-122.1-5.2-147.9 18.4-175 25.9-28.9 79.8-30.8 103.8 6.1l11.6 19.5 11.6-19.5c24.1-37.1 78.1-34.8 103.8-6.1 23.7 27.3 18.4 53 18.4 175z"/></svg>
+          </a>
+          <a href="https://twitter.com/IntelScott" target="_blank" class="fa fa-twitter"></a>
+          <a href="https://www.youtube.com/@tropchaud6452" target="_blank" class="fa fa-youtube"></a>
+          <a href="https://www.reddit.com/user/Trop_Chaud" target="_blank" class="fa fa-reddit"></a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
